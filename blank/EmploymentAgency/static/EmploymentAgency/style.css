@@ -1,0 +1,250 @@
+h1 .display-4 {
+    font-weight: 200;
+}
+
+:root {
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+
+}
+
+.hero {
+    background-image: url(../EmploymentAgency/desk-laptops.jpg);
+    background-color: cadetblue;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+
+#bb {
+    font-weight: 700;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+  }
+
+  body {
+    /*font-family: Sora, "sans-serif";*/
+    line-height: 1.7;
+    color: var(--body);
+  }
+
+  .hero h1 {
+    font-weight: 700;
+  }
+
+  .nav-link {
+    font-weight: 400;
+  }
+
+  h1 .display-4 {
+    font-weight: 700;
+  }
+
+  .navbar .nav-link {
+    font-weight: 700;
+  }
+
+  #home .btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0px;
+  }
+
+  .card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+  }
+
+  .card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+
+  .iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+  }
+
+  .navbar {
+    box-shadow: var(--box-shadow);
+  }
+
+  .service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .service::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+.service:hover .iconbox {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover p {
+    color: #fff;
+}  
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+/*.col-img {
+  
+  background-image: url(../EmploymentAgency/transparent-helmet-13.png);
+  background-color: cadetblue;
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  /*background-image: url(../EmploymentAgency/desk-laptops.jpg);
+  background-color: cadetblue;
+  background-position: center;
+  background-size: cover;
+  
+  z-index: 2;
+}
+*/
+
+form input.form-control {
+  height: 46px;
+}
+
+input.form-control {
+  border-radius: 0;
+}
+
+form .form-control {
+  border: transparent;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.footer-top {
+  padding-bottom: 90px;
+  padding: 90px;
+}
+
+.logo {
+  width: 160px;
+}
+
+form.btn:hover {
+  background-color: #888;
+}
+
+.form-control-fluid {
+  border-color: #888;
+}
+
+.footer-top a {
+  color: var(--body);
+}
+
+.footer-top a:hover {
+  color: #fff;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.iconbox {
+  width: 54px;
+  height: 54px;
+  display:flex;
+  align-items: center;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 32px;
+  border-radius: 100px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  width: 34px;
+  height: 34px;
+  background-color: var(--primary);
+  border-radius: 2px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin-left: 5px;
+  transition: all 0.4s ease;
+  border: 2px solid var(--primary);
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+  background: transparent;
+  border-color: var(--primary);
+}
+
+.pricing i {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.pricing ul li {
+  margin-top: 8px;
+
+}
+
+.team-member img {
+  width: 175px;
+  height: 175px;
+  border-radius: 100%;
+}
+
+.img-fluids {
+  border-radius: 35px;
+}

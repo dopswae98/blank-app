@@ -1,0 +1,251 @@
+{% extends 'EmploymentAgency/base.html' %}
+{% load static %}
+
+{% block body %}
+
+<section>
+  <div class="d-flex  text-center text-bg-light">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <main class="px-3" style="padding-top:80px;">
+        <h1 style="font-size:65px;">Contact us anytime.</h1>
+        <p class="lead">Were are always avalaible to provide services that satisfy our clients.</p>
+        <!--<p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+        </p>-->
+
+        <section class="bg-light text-dark p-5 text-center">
+          <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+              <div class="">
+                <h1>Get your dream <span class="text-warning">JOB</h1></span>
+                <p class="lead">
+                  We've got you covered, just send us your CV and prepare well for the interview as we
+                  get you in-touch with your next employer. We now have 6+ years in the field of providing
+                  companies with emplyees as we have worked with so so many companies and the respective
+                  potential employees.
+                </p>
+              </div>
+              <img src="{% static 'EmploymentAgency/helmet.png' %}" alt="logo"
+                class="img-fluid w-50 p-5 float-right h-.2%">
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+
+  <section class="p-5 ">
+    <div class="">
+      <div class="h1 text-center">Frequently Asked Questions</div>
+      <div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                How long does it take to get employed?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Well it all depends with the employer's schedule but under normal
+                circumstances it takes like 2-5 days to get to the interview.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How much do you charge us to apply?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">We don't charge any dime, we do this for the love of getting you a job.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Say if l fail on one job can you try and get us another?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Yes, as long as you haven't been dismissed under indiscipline or
+                underperfomance charges we're always there to assist.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--aPPLY FOR a JOB-->
+  <section class=" text-bg-light mx-auto justify-content-center">
+    <div class="container ">
+      <div class="row d-flex justify-content-center align-items-center p-2">
+        <div class="col-xl-9">
+
+          <h1 class="text-dark text-center mb-4">Apply for a job</h1>
+
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body">
+
+              <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Full name</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <input type="text" class="form-control form-control-lg" />
+
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Email address</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <input type="email" class="form-control form-control-lg" placeholder="example@example.com" />
+
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Message</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <textarea class="form-control" rows="3" placeholder="Message sent to the employer"></textarea>
+
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+
+                  <h6 class="mb-0">Upload CV</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                  <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file
+                    size 50 MB</div>
+                  <button type="submit" class="btn btn-primary mx-auto mt-4">Submit</button>
+                </div>
+              </div>
+
+              <hr class="mx-n3">
+
+              <!--<div class="px-5 py-4">-->
+              <!--<div class="">
+                <button type="submit" class="btn btn-primary btn-lg">Send application</button>
+              </div>-->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-->
+  <!--
+<section class="p-5 bg-dark text-light" id="questions">
+    <div class="container">
+          
+    </div>
+</section>
+-->
+  <!--Address Details-->
+  <!--<div class="col-lg-8 mx-auto p-4 py-md-5 text-bg-dark">-->
+  <section class="pt-4 pb-5">
+    <div class="text-center text-dark bg-white col-lg p-2">
+
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6">
+            <h2>Office Address</h2>
+            <p>Plot 14 Hunters close Unmwinsdale Harare Chishawasha, first right turn after service station before the
+              tollgate.</p>
+
+          </div>
+
+          <div class="col-md-6">
+            <h2>Contact Us</h2>
+            <p>Email:lavmalachi@gmail.com</p>
+            <p>Mobile Number:+263773072851 | +263774155497</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Blog Section-->
+  <section>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-8 mx-auto text-center">
+          <h6 class="text-primary">CONTACT</h6>
+          <h1>Get In Touch</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ipsum adipisci obcaecati blanditiis corporis? Quis unde sint neque repudiandae, assumenda earum sit quisquam? Tempore consequatur alias est neque incidunt. Ipsa?</p>
+
+        </div>
+      </div>
+      <form action="" class="row g-3 justify-content-center">
+        <div class="col-md-5">
+          <input type="text" class="form-control" placeholder="Full Name">
+        </div>
+        <div class="col-md-5">
+          <input type="text" class="form-control" placeholder="Enter Email">
+        </div>
+        <div class="col-md-10">
+          <input type="text" class="form-control" placeholder="Enter Subject">
+        </div>
+        <!--<div class="col-md-9 pe-5">
+
+          <input class="form-control form-control-lg" id="formFileLg" type="file" />
+          <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file
+            size 50 MB</div>-->
+        
+        <div class="col-md-10">
+          <input type="file" class="form-control-fluid" aria-label="default input example" id="formFileLg">
+          <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file
+            size 50 MB</div>
+        </div>
+        
+
+        <div class="col-md-10">
+          <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Enter Message"></textarea>
+        </div>
+        <div class="col-md-10 d-grid">
+          <a class="btn btn-outline-primary">Send Message</a>
+        </div>
+      </form>
+    </div>
+    
+  </section>
+
+  {% endblock body %}

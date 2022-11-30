@@ -1,0 +1,12 @@
+{% extends 'EmploymentAgency/base.html' %}
+
+{% block body %}
+
+<!--<h1>Hello, {{user.first_name}}</h1>-->
+<h1>Hello, {{user.username}}</h1>
+<ul>
+    <li>Currently logged in as: {{user.username}}</li>
+    <li><a href="{% url 'users:logout'%}">Logout</a></li>
+</ul>
+
+{% endblock %} 

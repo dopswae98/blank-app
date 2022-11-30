@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
+
+body::before{
+    display: block;
+    content: "";
+    height: 60px;
+  }
+  
+  @media (min-width:768px) {
+    .news-input {
+      width:50%;
+    }
+  }
+
+  .hero {
+    background-image: url(../static/EmploymentAgency/tw.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+  }
+
+  body {
+    font-family: Sora, "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+  }
+
+  .hero h1 {
+    font-weight: 700;
+  }
+
